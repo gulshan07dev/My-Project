@@ -37,13 +37,8 @@ nav {
     font-weight: 700;
     transition: .3s;
 }
-.menu a:hover {
+.menu a:hover, .menu a:active, .menu a:focus {
     text-decoration: underline;
-    color: #ffffff;
-    font-weight: 780;
-}
-.menu a:focus {
-    border-bottom: 2px solid #44c4ff;
     color: #ffffff;
     font-weight: 780;
 }
@@ -204,6 +199,7 @@ footer .social-icon a:hover {
 @media (max-width: 1015px) {
     .content {
         width: 45%;
+        cursor: default;
     }
 }
 
