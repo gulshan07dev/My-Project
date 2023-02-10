@@ -1,0 +1,175 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(195, 195, 195);
+    color: gray;
+}
+
+.card {
+    width: 330px;
+    height: 470px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #e4e3e3;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray, -3px -3px 3px white;
+}
+
+.profileImage {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    border: 8px solid #e2e2e2;
+    box-shadow: 2px 2px 2px gray, -2px -2px 2px white;
+}
+
+.profleName {
+    font-weight: 600;
+    color: #414141;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.profileDetail {
+    font-weight: 600;
+    color: #777777;
+    margin-bottom: 5px;
+}
+
+.topSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+}
+
+.topSection i {
+    cursor: pointer;
+}
+
+.socialMedia {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.socialMedia i {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #e2e2e2;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px gray, -2px -2px 2px white;
+    cursor: pointer;
+    transition: -3;
+}
+
+.socialMedia i:hover {
+    transform: translate(0px, -3px);
+}
+
+.socialMedia a:nth-child(1) {
+    color: #0A66C2;
+}
+
+.socialMedia a:nth-child(2) {
+    color: #171515;
+}
+
+.socialMedia a:nth-child(3) {
+    color: #ff6b6b;
+}
+
+.socialMedia a:nth-child(4) {
+    color: red;
+}
+
+.myBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myBtn button {
+    margin-top: 12px;
+    padding: 12px 25px;
+    color: #6b6b6b;
+    font-size: 18px;
+    font-weight: 750;
+    border: 2px solid #d4d4d4;
+
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px gray, -2px -2px 2px white;
+    cursor: pointer;
+    transition: -3s;
+    background-color: #e2e2e2;
+
+}
+
+.myBtn button:hover {
+    transform: translate(0px, -3px);
+}
+
+.LikeAndComment {
+    display: flex;
+}
+
+.heart {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-right: 15px;
+    color: #4e4d4d;
+    font-weight: 600;
+    cursor: pointer;
+    border-right: 3px solid #aeaeae;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #4e4d4d;
+    font-weight: 600;
+    cursor: pointer;
+    border-right: 3px solid #aeaeae;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 15px;
+    color: #4e4d4d;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
