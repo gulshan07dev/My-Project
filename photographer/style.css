@@ -1,0 +1,271 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* navigation bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px rgb(175, 174, 174);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: none;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* background: none; */
+}
+
+.menu a {
+    font-size: 18px;
+    color: #070771;
+    font-weight: 600;
+    background: none;
+}
+
+.menu a:hover,
+.menu a:active {
+    color: #f200ff;
+    text-decoration: underline;
+}
+
+/* main section */
+.main-section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    gap: 100px;
+}
+
+.left-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section h1 {
+    font-size: 90px;
+}
+
+.right-section h1 span:first-child {
+    color: #070771;
+}
+
+.right-section h1 span:nth-child(2) {
+    color: #000039;
+}
+
+.right-section h1 span:last-child {
+    color: #f200ff;
+}
+
+.right-section p {
+    font-size: 15px;
+    margin: 25px 15px;
+    color: #0c0c50;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.right-section button {
+    padding: 15px 30px;
+    background-color: #00fff7;
+    color: #6c39c4;
+    border: none;
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    box-shadow: 0 0 5px rgb(95, 94, 185);
+    cursor: pointer;
+    margin: 25px;
+    transition: .3s;
+}
+
+.right-section button:hover {
+    transform: translate(0, -5px);
+}
+
+
+/* Gallery */
+.Gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    margin-top: 100px;
+}
+
+.Gallery h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #200c6f;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 3px 3px 3px gray;
+    transition: .3s;
+}
+
+.content:hover {
+    transform: translate(0, -5px);
+    box-shadow: 4px 4px 4px #8d8c8c, -2px -2px -2px #b3b3b3;
+}
+
+.content img {
+    border-radius: 20px;
+}
+
+.Gallery-container div:nth-child(5) {
+    position: relative;
+    bottom: 200px;
+}
+
+.Gallery-container div:nth-child(7) {
+    position: relative;
+    bottom: 580px;
+}
+
+.Gallery-container div:nth-child(9) {
+    position: relative;
+    right: 280px;
+    bottom: 700px;
+}
+
+.Gallery-container img {
+    width: 35vw;
+}
+
+/* footer */
+footer {
+    height: 100px;
+    background-color: #2b2b2b;
+}
+footer p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 60;
+    background: none;
+    padding: 25px 0;
+}
+
+/* media query */
+@media screen and (max-width: 1280px) {
+    .main-section {
+        gap: 20px;
+    }
+
+    .right-section h1 {
+        font-size: 50px;
+    }
+
+    .Gallery-container div:nth-child(5) {
+        position: static;
+    }
+
+    .Gallery-container div:nth-child(7) {
+        position: static;
+    }
+
+    .Gallery-container div:nth-child(9) {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .left-section {
+        width: 100%;
+        padding-top: 14%;
+    }
+
+    .left-section img {
+        width: 60%;
+        height: 70%;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    .right-section h1,
+    p {
+        text-align: center;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .menu a {
+        font-size: 16px;
+    }
+
+    .Gallery-container img {
+        width: 80vw;
+    }
+}
