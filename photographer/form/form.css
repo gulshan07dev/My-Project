@@ -1,0 +1,147 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* navigation bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px rgb(175, 174, 174);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: none;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* background: none; */
+}
+
+.menu a {
+    font-size: 18px;
+    color: #070771;
+    font-weight: 600;
+    background: none;
+}
+
+.menu a:hover,
+.menu a:active {
+    color: #f200ff;
+    text-decoration: underline;
+}
+
+/* fill this form */
+.fill-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    gap: 45px;
+    padding-top: 100px;
+}
+.fill-form h1 {
+    font-size: 5vw;
+    font-weight: 600;
+    color: #070771;
+    /* align-self: flex-start; */
+    justify-self: flex-start;
+    text-shadow: 1px 1px #542cc0;
+    text-decoration: underline;
+}
+
+.form-container {
+    padding: 10px 12px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #2252ff;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: none;
+}
+.form-container form label {
+    font-size: 18px;
+    font-weight: 650;
+    color: #8e1cff;
+    background: none;
+    padding: 7px 1px;
+}
+.form-container form input,textarea {
+    padding: 6px 12px;
+    background: none;
+    font-size: 16.7px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 1px 1px #a1a1a1, -2px -2px rgb(227, 227, 227);
+}
+.form-container form textarea {
+    height: 100px;
+}
+.form-container form input:last-child {
+    margin: 20px 0;
+    background: #07b607;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 0 8px #009127;
+}
+.form-container form input:focus, .form-container form textarea:focus {
+    box-shadow: 1px 1px #001cb9, -2px -2px rgb(0, 71, 203);
+}
+.submit-btn {
+    cursor: pointer;
+    transition: .3s;
+}
+.submit-btn:hover {
+    transform: translate(0, -4px);
+}
+
+
+@media screen and (max-width: 650px) {
+    .menu a {
+        font-size: 16px;
+    }
+
+    .Gallery-container img {
+        width: 80vw;
+    }
+}
