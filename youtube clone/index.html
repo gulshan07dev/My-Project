@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <title>YouTube Clone</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="flex-div">
+            <div class="nav-left flex-div">
+                <i class="fa-solid fa-bars"></i>
+                <img src="https://w7.pngwing.com/pngs/674/324/png-transparent-youtube-logo-music-video-computer-icons-youtube-logo-text-trademark-logo.png" alt="logo">
+            </div>
+            <div class="nav-middle flex-div">
+                <div class="search-box flex-div">
+                    <input type="text" placeholder="Search">
+                    <span class="material-symbols-outlined search">search</span>
+                </div>
+                <span class="material-symbols-outlined mic">
+                    mic
+                    </span>
+            </div>
+            <div class="nav-right">
+                <span class="material-symbols-outlined">
+                    video_call
+                    </span>
+                <span class="material-symbols-outlined">
+                    notifications
+                    </span>
+                <img src="./images/gulshan.jpg" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <!-- main section -->
+    <section>
+        <!-- ------sidebar------- -->
+        <div class="sidebar">
+            <div class="shortcut-links">
+                <a href=""><span class="material-symbols-outlined">
+                    home
+                    </span><p>Home</p></a>
+                <a href=""><span class="material-symbols-outlined">
+                    explore
+                    </span><p>Explore</p></a>
+                <a href=""><span class="material-symbols-outlined">
+                    subscriptions
+                    </span><p>Subscription</p></a>
+                <hr>
+                <a href=""><span class="material-symbols-outlined">
+                    video_library
+                    </span><p>Library</p></a>
+                <a href=""><span class="material-symbols-outlined">
+                    history
+                    </span><p>History</p></a>
+                <hr>
+            </div>
+            <div class="subscribed-list">
+                <h3>Subscriptions</h3>
+                <a href=""><img src="./images/college wallah.jpg"><p>College Wal...</p></a>
+                <a href=""><img src="./images/sandeep maheshwari.jpg"><p>Sandeep...</p></a>
+                <a href=""><img src="./images/ca rahut.jpg"><p>Rahul ma...</p></a>
+                <a href=""><img src="https://yt3.ggpht.com/UvloYaAJ2YR14S94z9xScC-2IxVscDbXYARXJDVTmV_yg7cNUs2mcy4ugTm0Ezk3klqAO5zGSA=s68-c-k-c0x00ffffff-no-rj"><p>Chai aur code</p></a>
+            </div>
+        </div>
+        <!-- video section -->
+        <div class="right-section">
+            <!-- item 1 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail1.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/UvloYaAJ2YR14S94z9xScC-2IxVscDbXYARXJDVTmV_yg7cNUs2mcy4ugTm0Ezk3klqAO5zGSA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>String in Javascript</h3>
+                        <p>chai aur code</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 2 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail2.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="./images/college wallah.jpg" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Dive in Case Statements & Sub Queries | One Shot SQL</h3>
+                        <p>college wallah</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 3 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail3.jpg" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/vJEsALWnQIwPZ2oaVbFWPu1n4L0CDkHpAdGJ-KBPFsxM9hsMsvExFK1mnCGUrMzfC67XPVThmQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Meri Baari | @IqlipseNova | New Hindi Song 2023</h3>
+                        <p>Sony Music india</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 4 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail4.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/tEuOjZNWRE9DuJBy7bHzKtL8dX_EteW-qJIREvOXq3tVBfpdn8Nz0zIpkLHg-5wZzX3PgMnIQg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>
+                            Watch Later
+                            Add to queue
+                            PM Modi holds roadshow in Shillong, Meghalaya</h3>
+                        <p>Narendar Modi</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 5 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail5.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/X2alddQ-5Y0OVOZ73ykFrl8pH2awHaKO2lG_juWV0ofqPKHynuuWBWZyB4PdAIVLmd881qB-jzI=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>gussa ka dusra rup ahankar hai | Khan sir, sandeep maheshwari</h3>
+                        <p>Mr shaumbbin</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 6 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail6.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="./images/college wallah.jpg" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Cookies Kya Hoti Hain ? 🍪 How do cookies track you?</h3>
+                        <p>college wallah</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 7 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail7.jpg" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/v_PwNTRdcmpaEU6zh9wytm0ERtq2BOAmBQvr1QyZstphlpcPUqjbX3wqIvSRR9bWIgSjmRUJcwE=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Bandeya Rey Bandeya Lyrical | SIMMBA | Ranveer Singh, Sara Ali Khan</h3>
+                        <p>T-series</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 8 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail8.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="./images/college wallah.jpg" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Introduction to C++ | Lecture 1 | C++ and DSA Foundation Course</h3>
+                        <p>college wallah</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 9 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail9.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/UvloYaAJ2YR14S94z9xScC-2IxVscDbXYARXJDVTmV_yg7cNUs2mcy4ugTm0Ezk3klqAO5zGSA=s48-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Datatype conversion confusion | Javascript</h3>
+                        <p>Chai aur code</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 10 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail1.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/UvloYaAJ2YR14S94z9xScC-2IxVscDbXYARXJDVTmV_yg7cNUs2mcy4ugTm0Ezk3klqAO5zGSA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>String in Javascript</h3>
+                        <p>chai aur code</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 11 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail2.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="./images/college wallah.jpg" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Dive in Case Statements & Sub Queries | One Shot SQL</h3>
+                        <p>college wallah</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 12 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail3.jpg" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/vJEsALWnQIwPZ2oaVbFWPu1n4L0CDkHpAdGJ-KBPFsxM9hsMsvExFK1mnCGUrMzfC67XPVThmQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Meri Baari | @IqlipseNova | New Hindi Song 2023</h3>
+                        <p>Sony Music india</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 13 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail4.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/tEuOjZNWRE9DuJBy7bHzKtL8dX_EteW-qJIREvOXq3tVBfpdn8Nz0zIpkLHg-5wZzX3PgMnIQg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>
+                            Watch Later
+                            Add to queue
+                            PM Modi holds roadshow in Shillong, Meghalaya</h3>
+                        <p>Narendar Modi</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 14 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail5.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/X2alddQ-5Y0OVOZ73ykFrl8pH2awHaKO2lG_juWV0ofqPKHynuuWBWZyB4PdAIVLmd881qB-jzI=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>gussa ka dusra rup ahankar hai | Khan sir, sandeep maheshwari</h3>
+                        <p>Mr shaumbbin</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 15 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail6.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="./images/college wallah.jpg" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Cookies Kya Hoti Hain ? 🍪 How do cookies track you?</h3>
+                        <p>college wallah</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 16 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail7.jpg" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/v_PwNTRdcmpaEU6zh9wytm0ERtq2BOAmBQvr1QyZstphlpcPUqjbX3wqIvSRR9bWIgSjmRUJcwE=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Bandeya Rey Bandeya Lyrical | SIMMBA | Ranveer Singh, Sara Ali Khan</h3>
+                        <p>T-series</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 17 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail8.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="./images/college wallah.jpg" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Introduction to C++ | Lecture 1 | C++ and DSA Foundation Course</h3>
+                        <p>college wallah</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 18 -->
+            <div class="item">
+                <img class="thumbnail" src="./images/thumbnail9.webp" alt="">
+                <div class="title">
+                    <div class="v-logo">
+                        <img src="https://yt3.ggpht.com/UvloYaAJ2YR14S94z9xScC-2IxVscDbXYARXJDVTmV_yg7cNUs2mcy4ugTm0Ezk3klqAO5zGSA=s48-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="v-title">
+                        <h3>Datatype conversion confusion | Javascript</h3>
+                        <p>Chai aur code</p>
+                        <p>5.9K views ⋅ 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
