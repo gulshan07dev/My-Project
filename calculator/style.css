@@ -13,43 +13,48 @@ header {
     align-items: center;
     padding: 25px 0;
 }
+
 header h1 {
     font-size: 30px;
     font-weight: 600;
     color: #1e093c;
     text-align: center;
 }
+
 section {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .container {
     display: inline-block;
     border: 2px solid #b7b7b7;
-    /* padding: 15px; */
-    padding-top: 0;
+    padding-top: 10px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px gray, -5px -5px #ffffff;
 }
+
 input {
     width: 100%;
-    padding: 6px 10px;
-    /* margin-top: 15px; */
+    padding: 5px 15px;
     margin-bottom: 15px;
-    font-size: 22px;
+    color: #494949;
+    font-size: 30px;
     border: none;
-    background-color: #ffffff;
+    background-color: transparent;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
+
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 15px;
 }
+
 .row button {
     width: 70px;
     height: 70px;
@@ -57,20 +62,67 @@ input {
     border-radius: 50%;
     padding: 10px;
     margin: 6px;
-    font-size: 20px;
+    font-size: 27px;
+    font-weight: 500;
+    background-color: #efeded;
+    color: #383838;
     cursor: pointer;
-    background-color: #ffffff;
-    color: #000000;
-    box-shadow: 0 0 3px #808080;
-    box-shadow: 2px 2px 2px #808080;
+    transition: .3s;
 }
+
+.row button:focus,
 .row button:hover {
-    background-color: #e8e8e8;
-    box-shadow: 2px 2px 2px #808080, -2px -2px #e6e6e6;
+    background-color: #9a9a9ac7;
+    font-size: 22px;
 }
-.r-symbol button {
-    background-color: #e4e4e4;
+
+.row .clear-btn {
+    color: #ff0000;
+    font-weight: 550;
 }
-.row .symbol{
-    background-color: #e4e4e4;
+
+.row .operator {
+    color: #008700;
+    font-weight: 550;
+}
+
+button i {
+    background: none;
+}
+
+#equalto {
+    background-color: #008700;
+    color: #ffffff;
+    font-size: 35px;
+    transition: .3s;
+}
+
+#equalto:hover {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    section {
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+
+    .container {
+        border: none;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    input {
+        padding-inline: 30px;
+    }
 }
