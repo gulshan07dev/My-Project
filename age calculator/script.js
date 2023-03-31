@@ -12,7 +12,13 @@ btn.addEventListener("click", () => {
     // Update the seconds every second
     setInterval(() => {
         const secondsEl = document.getElementById('seconds');
-        secondsEl.textContent = Number(secondsEl.textContent) + 1;
+        const newSeconds = Number(secondsEl.textContent) + 1;
+        if (newSeconds >= 60) {
+            secondsEl.textContent = "0";
+            minutesEl.textContent = Number(minutesEl.textContent) + 1;
+        } else {
+            secondsEl.textContent = newSeconds;
+        }
     }, 1000);
 })
 
