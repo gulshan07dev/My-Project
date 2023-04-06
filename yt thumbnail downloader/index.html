@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yt thumbnail downloader</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="main-section flex">
+        <h1><span>DOWNLOAD</span> THUMBNAIL</h1>
+        <div class="container flex">
+            <div class="input-box flex">
+                <label for="url">Paste Here Youtube Video Url</label>
+                <input type="text" placeholder="https://www.youtube.com/watch?=lque21b" required id="url">
+            </div>
+            <div class="thumbnail-preview flex">
+                <img alt="thumbnail" class="thumbnail">
+                <i class="fas fa-cloud-download-alt"></i>
+                <span>paste the video url to see preview</span>
+            </div>
+            <button class="download-btn" type="submit">Download Thumbnail</button>
+        </div>
+    </section>
+</body>
+<script src="./script.js"></script>
+
+</html>
