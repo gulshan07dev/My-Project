@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tak Toe</title>
+    <!-- adding the css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- adding the cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="flex">
+        <h1>Tik Tak Toe</h1>
+        <i class="fa-solid fa-gear fa-spin" id="setting-icon"></i>
+    </nav>
+
+    <!-- game section -->
+    <section class="game-container flex">
+        <div class="container">
+            <div class="box bt-0 bl-0 flex"><span class="box-text"></span></div>
+            <div class="box bt-0 flex"><span class="box-text"></span></div>
+            <div class="box bt-0 br-0 flex"><span class="box-text"></span></div>
+            <div class="box bl-0 flex"><span class="box-text"></span></div>
+            <div class="box flex"><span class="box-text"></span></div>
+            <div class="box br-0 flex"><span class="box-text"></span></div>
+            <div class="box bl-0 bb-0 flex"><span class="box-text"></span></div>
+            <div class="box bb-0 flex"><span class="box-text"></span></div>
+            <div class="box br-0 bb-0 flex"><span class="box-text"></span></div>
+        </div>
+        <div class="info flex">
+            <h2>Welcome to <span>Tik Tak Toe</span></h2>
+            <div class="flex">
+                <p class="result">turn X</p>
+                <img src="./assests/excited.gif" alt="exited-img" id="exited">
+            </div>
+            <button id="restart">restart</button>
+        </div>
+    </section>
+
+    <!-- game setting -->
+    <section>
+        <div id="setting" class="flex">
+            <header>-------------------SOUND-------------------- </header>
+            <div class="option flex">
+                <label><i class="fa-solid fa-music"></i> Background music</label>
+                <select id="bg-m">
+                    <option value="on">on</option>
+                    <option value="off">off</option>
+                </select>
+            </div>
+            <div class="option flex">
+                <label><i class="fa-solid fa-music"></i> Ting music</label>
+                <select id="ting-m">
+                    <option value="on">on</option>
+                    <option value="off">off</option>
+                </select>
+            </div>
+            <div class="option flex">
+                <label><i class="fa-solid fa-music"></i> Game over music</label>
+                <select id="gover-m">
+                    <option value="on">on</option>
+                    <option value="off">off</option>
+                </select>
+            </div>
+            <header>--------------PLAYER NAME--------------- </header>
+            <div class="option flex">
+                <label for="player-1">Player-1 (X)</label>
+                <input type="text" id="player-1" placeholder="Gulshan">
+            </div>
+            <div class="option flex">
+                <label for="player-2">Player-2 (O)</label>
+                <input type="text" id="player-2" placeholder="sunny">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p id="me">Made By Gulshan<span>♥</span></p>
+    </footer>
+
+</body>
+<!-- adding the script file -->
+<script src="./script.js"></script>
+
+</html>
