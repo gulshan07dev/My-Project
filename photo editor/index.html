@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo editor</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="flex disabel">
+        <!-- code for features section -->
+        <div class="features flex">
+            <header>Photo Editor</header>
+            <fieldset>
+                <!-- code for filter option -->
+                <legend>Filter</legend>
+                <div class="filter flex">
+                    <button class="active" id="brightness">Brightness</button>
+                    <button id="saturation">Saturation</button>
+                    <button id="inversion">Inversion</button>
+                    <button id="grayscale">Grayscale</button>
+                    <button id="contrast">Contrast</button>
+                    <button id="hue-rotate">Hue-rotate</button>
+                </div>
+                <div class="filter-info">
+                    <p id="progress-name">brightness</p>
+                    <p id="progress-value">100%</p>
+                    <input type="range" id="progress" value="100" min="0" max="200">
+                </div>
+            </fieldset>
+            <!-- code for rotate and flip option -->
+            <fieldset>
+                <legend>Rotate & Flip</legend>
+                <div class="rotate-flip flex">
+                    <button id="left"><i class="fa-sharp fa-solid fa-rotate-left"></i></button>
+                    <button id="right"><i class="fa-sharp fa-solid fa-rotate-right"></i></button>
+                    <button id="horizontal"><i class="fa-solid fa-left-right"></i></button>
+                    <button id="vertical"><i class="fa-solid fa-up-down"></i></button>
+                </div>
+            </fieldset>
+            <!-- code for upload & download image -->
+            <button id="image-input-btn">Upload Image <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></button>
+            <button id="down-img">Download Image</button>
+        </div>
+        <div class="line"></div>
+        <!-- code for preview section -->
+        <div class="preview-section flex">
+                <img id="preview">
+            <input type="file" id="image-input">
+        </div>
+    </section>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
