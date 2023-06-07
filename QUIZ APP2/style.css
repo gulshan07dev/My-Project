@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+#quiz-section {
+    /* background-color: #f0f8ff; */
+    background: #ffffff;
+    box-shadow: 0 0 1px #f5f5f559;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90vh;
+    width: 80vw;
+    position: relative;
+}
+
+nav {
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    font-size: 20px;
+    background: linear-gradient(to right, #ffe3f4, #eaff8c);
+    border-radius: 5px;
+}
+
+nav h1 {
+    background: linear-gradient(#000000, #1818ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav h1 span {
+    background: linear-gradient(#f10000, #a00008);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#quiz {
+    height: 90%;
+    width: 100%;
+    padding: 16px 15px 17px 15px;
+    justify-self: flex-start;
+    overflow-y: scroll;
+}
+
+#quiz.showResult {
+    height: 85%;
+    position: relative;
+    top: 15px;
+    padding-top: 4px;
+}
+
+#result {
+    background: linear-gradient(#36ff36, #30ff30, #28ff28);
+    padding: 7px 70px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px #00bd00c0;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+}
+
+#result.showResult {
+    display: block;
+    height: 5%;
+    z-index: 5;
+}
+
+#quiz-section .question {
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px 1px #f1f1f1, -1px -1px 3px #ececec;
+    padding: 7px 2px 7px 5px;
+    margin-bottom: 18px;
+}
+
+#quiz-section .question h3 {
+    font-size: 17px;
+    color: #3d3d3d;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#quiz-section .answers {
+    margin-top: 5.4px;
+    font-size: 16px;
+    color: #424242;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6px;
+}
+
+.btn-container {
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    box-shadow: 0 0 4px #eeeeee52;
+}
+
+.btn-container button {
+    width: 80%;
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 20px;
+    background: linear-gradient(to left, #3a3aff, #3535ff);
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 0 7px #80808046;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #e1e1ff;
+    z-index: 99;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#3838ffc7, #0000b69d);
+    filter: blur(100px);
+}
+
+@media screen and (max-width: 660px) {
+    nav {
+        font-size: 15px;
+        height: 8%;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    #quiz-section {
+        width: 100vw;
+        overflow: hidden;
+        background: #ffffff;
+    }
+
+    .btn-container button {
+        width: 90%;
+    }
+
+    #quiz {
+        height: 90%;
+        box-shadow: none;
+        padding-top: 0;
+    }
+
+    #quiz-section .question {
+        background-color: #ffffff;
+        border-radius: 7px;
+        box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.082), -1px -1px 5px rgba(0, 0, 0, 0.055);
+        padding: 7px 2px 7px 5px;
+        margin-bottom: 14px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    body {
+        gap: 1px;
+    }
+
+    nav {
+        font-size: 13px;
+        height: 9.3%;
+
+
+    }
+
+    #quiz {
+        height: 90%;
+    }
+
+    #quiz-section .question h3 {
+        font-size: 15px;
+    }
+
+    #quiz-section .answers {
+        font-size: 14px;
+    }
+}
